@@ -2,16 +2,33 @@
 <html>
 <head>
 	<title>Rock Paper Scissors</title>
-	<link rel="stylesheet" type="text/javascipt" href="main.js">
 </head>
 
 <body>
+var rock=
+var paper
+var scissors
 
-<button onclick="play(0);">Rock</button>
+<div onclick="rock()"><p>Rock</p>
+</div>
+
+
+  <button onclick="play(0);">Rock</button>
+</div>
+
+<div class="paper">
 <button onclick="play(1);">Paper</button>
-<button onclick="play(2);">Scissors</button>
+</div>
+
+<div class="scissors"><button onclick="play(2);">Scissors</button>
+</div>
+
+
+
 
 <script>
+
+document.getElementbyId("rock").addEventListener("onclick")
 
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
